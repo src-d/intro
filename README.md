@@ -70,15 +70,15 @@ Some of the most valuable insights when analyzing source code come not just from
 
 > **gitbase**, is a SQL database interface to Git repositories. It can be used to perform SQL queries about the Git history and about the [Universal AST](https://doc.bblf.sh/) of the code itself. gitbase is being built to work on top of any number of git repositories. It implements the _MySQL_ wire protocol and can be accessed using any MySQL client/library from any language.
 
-To make it easier to use Gitbase and in particular to integrate the visualizations of UAST's, we have created the gitbase playground:   
+To make it easier to use Gitbase and in particular to integrate the visualizations of UAST's, we have created the gitbase web:
 
 ![gitbase playground screenshot](.gitbook/assets/40638423-2742904c-6303-11e8-84d0-500eb35ed092.png)
 
-### Getting started with gitbase & gitbase playground
+### Getting started with gitbase & gitbase web
 
-* Check out this [quick start guide](https://docs.sourced.tech/gitbase-playground/documentation/quickstart) for running it locally
-* Head over to the [Gitbase](https://docs.sourced.tech/gitbase) or [Gitbase Playground documentation](https://docs.sourced.tech/gitbase-playground/)
-* Checkout the GitHub repository for [Gitbase](https://github.com/src-d/gitbase) & [Gitbase playground](https://github.com/src-d/gitbase-playground)
+* Check [the project's readme](https://github.com/src-d/gitbase-web#gitbase-web) to run it locally
+* Head over to the [Gitbase documentation](https://docs.sourced.tech/gitbase)
+* Checkout the GitHub repository for [Gitbase](https://github.com/src-d/gitbase) & [Gitbase web](https://github.com/src-d/gitbase-web)
 
 ## MLonCode Pre-Trained Models
 
