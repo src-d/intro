@@ -16,7 +16,7 @@ In this documentation we'll be talking about the different aspects of our techno
 
 ### Introduction
 
-To be able to do interesting analysis of source code, we need to treat our code as data. However, analyzing code as plain text is very limiting since our compilers actually use the [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) \(AST\).  
+To be able to do interesting analyses of source code, we need to treat our code as data. However, analyzing code as plain text is very limiting since our compilers actually use the [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) \(AST\).  
 
 ![source: ruslanspivak.com](.gitbook/assets/lsbasi_part7_ast_01.png)
 
@@ -28,7 +28,7 @@ One of the main challenges you face when starting with source code as data, and 
 
 * Check out the [documentation](https://docs.sourced.tech/babelfish)
 * [Google Collab Notebook](https://colab.research.google.com/drive/1sHq2sIZqIpfoEdRSmAHb49ghbWFecuy-) where we extract all identifiers from a sample of Go code
-* Checkout an [example](https://github.com/bblfsh/sonar-checks) of static analysis rules implemented on top of the UAST
+* Check out an [example](https://github.com/bblfsh/sonar-checks) of static analysis rules implemented on top of the UAST
 * [Run babelfish server locally with docker](https://docs.sourced.tech/babelfish/using-babelfish/getting-started#installing-bblfshd-locally)
 * Parse a sample of code at [http://dashboard.bblf.sh/](http://dashboard.bblf.sh/)
 
@@ -40,7 +40,7 @@ One of the main challenges you face when starting with source code as data, and 
 
 When working with machine learning on code \(MLonCode\) building your datasets is often time and resources intensive. We are lucky though that the field of MLonCode has very large amounts of public data available, it's all the public code hosted on GitHub, Bitbucket, Gitlab and equivalents. 
 
-### Pubic Git Archive \(PGA\)
+### Public Git Archive \(PGA\)
 
 Public Git Archive is the result of months of effort curating a dataset suitable for training MLonCode models. The dataset contains 3TB of repositories from GitHub ready to download over HTTP. This includes all of the contents \(git metadata and file contents\) for all of the repositories on GitHub with 50 or more stars as of January 2018. This dataset also takes care of merging all git repositories that share a common root \(forks\). 
 
@@ -68,7 +68,7 @@ At source{d} we process 10s of millions of Git repositories, to be able to disco
 
 Some of the most valuable insights when analyzing source code come not just from its latest version in the current branch \([HEAD](https://git-scm.com/docs/gitglossary#gitglossary-aiddefheadahead)\) but from how the code has evolved over time. The evolution of code over time, often by multiple contributors, is where some of the most interesting analysis and data can be found. This means you have to work with the version control data, the most popular system for which is [git](https://git-scm.com/). To be able to make it easy for you to be able to analyze the version control history of git repositories, we created [gitbase](https://github.com/src-d/gitbase). 
 
-> **gitbase**, is a SQL database interface to Git repositories. It can be used to perform SQL queries about the Git history and about the [Universal AST](https://doc.bblf.sh/) of the code itself. gitbase is being built to work on top of any number of git repositories. It implements the _MySQL_ wire protocol and can be accessed using any MySQL client/library from any language.
+> **gitbase** is a SQL database interface to Git repositories. It can be used to perform SQL queries about the Git history and about the [Universal AST](https://doc.bblf.sh/) of the code itself. gitbase is being built to work on top of any number of git repositories. It implements the _MySQL_ wire protocol and can be accessed using any MySQL client/library from any language.
 
 To make it easier to use Gitbase and in particular to integrate the visualizations of UAST's, we have created the gitbase web:
 
