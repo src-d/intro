@@ -40,7 +40,7 @@ One of the main challenges you face when starting with source code as data, and 
 
 When working with machine learning on code \(MLonCode\) building your datasets is often time and resources intensive. We are lucky though that the field of MLonCode has very large amounts of public data available, it's all the public code hosted on GitHub, Bitbucket, Gitlab and equivalents. 
 
-### Pubic Git Archive \(PGA\)
+### Public Git Archive \(PGA\)
 
 Public Git Archive is the result of months of effort curating a dataset suitable for training MLonCode models. The dataset contains 3TB of repositories from GitHub ready to download over HTTP. This includes all of the contents \(git metadata and file contents\) for all of the repositories on GitHub with 50 or more stars as of January 2018. This dataset also takes care of merging all git repositories that share a common root \(forks\). 
 
